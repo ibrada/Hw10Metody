@@ -24,14 +24,15 @@ public class Main {
         }
     }
 
-    public static void delivary(int a, int b) {
+    public static void delivery(int a) {
+        int deliveryDay = 0;
         if (a < 100) {
             if (a < 20) {
-                System.out.println("Потребуется дней " + (b + 1));
+                System.out.println("Потребуется дней " + (deliveryDay + 1));
             } else if (a < 60) {
-                System.out.println("Потребуется дней " + (b + 2));
+                System.out.println("Потребуется дней " + (deliveryDay + 2));
             } else {
-                System.out.println("Потребуется дней " + (b + 3));
+                System.out.println("Потребуется дней " + (deliveryDay + 3));
             }
         } else {
             System.out.println("Доствки нет");
@@ -48,8 +49,7 @@ public class Main {
         installApp(clientOS, clientDeviceYear);
 
         int deliveryDistance = 95;
-        int deliveryDay = 0;
-        delivary(deliveryDistance, deliveryDay);
+        delivery(deliveryDistance);
 
     }
 }
